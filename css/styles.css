@@ -3,6 +3,28 @@
     --secondary-font: 'Raleway', sans-serif;
    --accent-color: #2196F3; 
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding: 0;
+}
+
+img  {
+    display: block;
+}
 
 .list{
     list-style: none;
@@ -13,7 +35,42 @@
 body {
 font-family: 'Roboto', sans-serif;
 }
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
 /* ============== HEADER ============== */
+.header-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 24px;
+    margin-bottom: 25px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.menu-item:not(:last-child){
+    margin-right: 50px;
+
+}
+
+.logo {
+    margin-right: 93px;
+}
+ 
 .logo-style {
 font-family: var(--secondary-font);
 font-weight: 700;
@@ -55,6 +112,7 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: #757575;
+margin-right: 50px;
 }
 
 .contact-link:hover,
@@ -66,11 +124,16 @@ color: var(--accent-color);
 
 /* ============== HERO ============== */
 .hero-section {
+margin-bottom: 94px;
 height: 600px;
+align-items: center;
 background: #2F303A;
 }
 
 .hero-title {
+margin: 30px;
+padding-top: 200px;
+padding-bottom: 280px;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -81,9 +144,18 @@ color: #FFFFFF;
 }
 
 .modal-btn {
+margin: 0 auto;
 background: #2196F3;
 border-radius: 4px;
 color: #FFFFFF;
+display: block;
+border: none;
+padding: 10px 30px;
+cursor: pointer;
+letter-spacing: 0.06em;
+line-height: 1.8;
+font-size: 16px;
+font-weight: bold;
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -93,6 +165,14 @@ color: #FFFFFF;
 /* ============== END HERO ============== */
 
 /* ============== ADVANTAGES ============== */
+.advantages {
+    display: block;
+}
+
+.advantages-container {
+    padding: 95px 15px;
+}
+
 .advantages-title {
 font-size: 14px;
 font-weight: 700;
@@ -114,6 +194,8 @@ color: #757575;
 
 /* ============== ABOUT US ============== */
 .about-us-title {
+    display: flex;
+    align-items: center;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
