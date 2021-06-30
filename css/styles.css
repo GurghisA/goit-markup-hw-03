@@ -18,6 +18,7 @@ list-style: none;
 }
 
 ul,
+ol,
 li {
 text-decoration: none;
 list-style: none;
@@ -48,12 +49,13 @@ padding-right: 15px;
 margin: 0 auto;
 }
 /* ============== HEADER ============== */
+.header {
+    border: 1px solid #EEEEEE;
+}
 .header-container {
 display: flex;
 align-items: center;
 margin-left: auto;
- margin-top: 24px;
-margin-bottom: 25px;
 }
 
 .navigation {
@@ -65,6 +67,8 @@ align-items: center;
 display: flex;
 align-items: center;
 margin-right: 50px;
+padding-top: 32px;
+padding-bottom: 32px;
 }
 
 .menu-item:not(:last-child){
@@ -129,9 +133,9 @@ color: var(--accent-color);
 
 /* ============== HERO ============== */
 .hero-section {
-padding: 160px 60px;
-height: 600px;
-align-items: center;
+padding-top: 200px;
+padding-bottom: 200px;
+text-align: center;
 background: #2F303A;
 }
 
@@ -140,7 +144,6 @@ margin-bottom: 30px;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
-text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: #FFFFFF;
@@ -171,13 +174,13 @@ font-weight: bold;
 /* ============== ADVANTAGES ============== */
 .advantages {
     display: block;
+    padding: 95px 15px;
 }
 
 .advantages-container {
     display: flex;
     align-items: center;
     margin-left: auto;
-    padding: 95px 15px;
 }
 
 .advantages-list {
@@ -240,10 +243,7 @@ justify-content: space-between;
 
 /* ============== OUR TEAM ============== */
 .our-team {
-    background: #f5f4fa;
-}
-
-.container-our-team {
+background: #f5f4fa;
 padding: 95px 15px 95px 15px;
 }
 
@@ -263,7 +263,7 @@ justify-content: space-between;
 }
 
 .our-team-item {
-    background-color: #FFFFFF;
+background-color: #FFFFFF;
 box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
 border-radius: 0px 0px 4px 4px;
 }
@@ -296,14 +296,6 @@ margin-bottom: 30px;
 /* ============== FOOTER ============== */
 .footer {
 background: #2F303A;
-}
-
-.footer-section {
-padding-bottom: 94px;
-padding-top: 94px;
-}
-
-.container-footer {
 padding: 60px 15px;
 }
 
@@ -362,10 +354,13 @@ clip: rect(0 0 0 0);
 width: 1px;
 }
 
+.hero-portfolio {
+padding: 94px 0px;
+}
+
 .button-list {
 display: flex;
 justify-content: center;
-padding: 94px 0px;
 padding-bottom: 34px;
 }
 
@@ -410,7 +405,6 @@ margin-top: -30px;
 flex-basis: calc((100% - 270px) / 9);
 margin-left: 30px;
 margin-top: 30px;
-border-bottom: 1px solid #eeeeee;
 }
 
 .project-border {
@@ -422,6 +416,9 @@ padding-bottom: 20px;
 padding-top: 20px;
 padding-left: 24px;
 padding-right: 24px;
+border-bottom: 1px solid #eeeeee;
+border-right: 1px solid #eeeeee;
+border-left: 1px solid #eeeeee;
 }
 
 .project-nume {
