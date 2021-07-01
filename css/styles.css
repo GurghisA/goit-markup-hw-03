@@ -57,7 +57,7 @@ margin: 0 auto;
 .header {
 padding-top: 25px;
 padding-bottom: 25px;
-border: 1px solid #ECECEC;
+border-bottom: 1px solid #ECECEC;
 }
 .header-container {
 display: flex;
@@ -225,7 +225,7 @@ color: #757575;
 /* ============== END ADVANTAGES ============== */
 
 /* ============== ABOUT US ============== */
-.container-about-us {
+.about-us {
 align-items: center;
 padding: 0px 15px 95px 15px;
 
@@ -250,9 +250,6 @@ justify-content: space-between;
 /* ============== OUR TEAM ============== */
 .our-team {
 background: #f5f4fa;
-}
-
-.section {
 padding-bottom: 94px;
 padding-top: 94px;
 }
@@ -308,7 +305,7 @@ color: #757575;
 /* ============== FOOTER ============== */
 .footer {
 background: #2F303A;
-padding: 60px 15px;
+padding: 60px 0px;
 }
 
 .footer-logo {
@@ -360,6 +357,10 @@ color: white;
 /* ============== END FOOTER ============== */
 
 /* ============== PORTFOLIO ============== */
+.hero-portfolio {
+padding: 94px 0px;
+}
+
 .visually-hidden {
 position: absolute;
 clip: rect(0 0 0 0);
@@ -369,8 +370,7 @@ width: 1px;
 .button-list {
 display: flex;
 justify-content: center;
-padding: 94px 0px;
-padding-bottom: 34px;
+padding-bottom: 50px;
 }
 
 .button-item {
@@ -410,10 +410,6 @@ margin-top: -30px;
 flex-basis: calc((100% - 270px) / 9);
 margin-left: 30px;
 margin-top: 30px;
-}
-
-.project-border {
-margin-bottom: 79px;
 }
 
 .project-profile {
